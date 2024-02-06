@@ -1,6 +1,6 @@
-# ArchManual
-分布式系统工具手册，整理一些技术主题的应用场景、架构注意点、工具集。
+# Summary
 
+* [ArchManual](README.md)
 * 总览
     * [思维导图](overview/index.md)
 * 后端主题
