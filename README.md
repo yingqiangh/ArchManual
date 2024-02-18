@@ -40,7 +40,19 @@ ArchManual
     - [Nacos](https://github.com/alibaba/nacos)
     - [Spring Config](https://github.com/spring-cloud/spring-cloud-config)
     - [Disconf](https://github.com/knightliao/disconf)
-- 消息队列
+- [消息队列](mq/index.md)
+    - 分布式消息队列
+        - [Kafka](https://github.com/apache/kafka)
+        - [RocketMQ](https://github.com/RocketMQ)
+        - [RabbitMQ](https://github.com/rabbitmq)
+        - [ActiveMQ](https://github.com/apache/activemq)
+        - [Redis](https://github.com/redis/redis)
+    - 内存消息队列（线程间消息传递）
+        - [Disruptor](https://github.com/LMAX-Exchange/disruptor)
+    - MTTQ（应用于物联网）
+        - [EMQX](https://github.com/emqx/emqx)
+        - [Mosquitto](https://github.com/eclipse/mosquitto)
+        - [NanoMQ](https://github.com/nanomq/nanomq)
 - 延迟任务
 - 注册发现
 - 全局控制
