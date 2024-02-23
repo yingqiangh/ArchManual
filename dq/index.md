@@ -287,6 +287,9 @@ if (delay > 10) {
 - 常用的一些分布式任务调度中间件：
     - [XXL-Job](https://github.com/xuxueli/xxl-job)
     - [Elastic-Job](https://shardingsphere.apache.org/elasticjob/)
+**优缺点**
+- 优点：这个方案的优点也是比较简单，实现起来比较容易 
+- 缺点：时间不精准、无法处理大订单量、对数据库造成压力、分库分表问题。 
 
 ##### 4.内存队列
 ###### # JDK DelayQueue

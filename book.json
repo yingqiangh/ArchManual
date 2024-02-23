@@ -21,8 +21,8 @@
         "elements": [".gitbook-link"]
       },
       "insert-logo": {
-          "url": "https://file.smallzhiyun.com/%E4%B9%A6.png",
-          "style": "background: none; max-height: 30px; min-height: 30px"
+          "url": "images/logo.jpg",
+          "style": "background: none; max-height: 60px; min-height: 30px;pa"
       },
       "favicon": "./icon/book.ico",
       "tbfed-pagefooter": {
