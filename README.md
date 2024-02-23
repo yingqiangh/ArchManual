@@ -53,10 +53,27 @@ ArchManual
         - [EMQX](https://github.com/emqx/emqx)
         - [Mosquitto](https://github.com/eclipse/mosquitto)
         - [NanoMQ](https://github.com/nanomq/nanomq)
-- 延迟任务
-- 注册发现
+- [延迟任务](dq/index.md)
+    - 消息队列
+        - [RabbitMQ TTL + 死信队列](dq/index.md)
+        - [RabbitMQ 延迟队列插件(*推荐)](dq/index.md)
+        - [RocketMQ 定时消息(*推荐)](dq/index.md)
+    - Redis缓存
+        - [定时轮询zset](dq/index.md)
+        - [Redis Key过期监听](dq/index.md)
+        - [Redisson 分布式延迟队列 RDelayedQueue (*推荐)](dq/index.md)
+    - 定时轮询
+        - [Spring Task](dq/index.md)
+        - [XXL-Job](dq/index.md)
+        - [Elastic-Job](dq/index.md)
+    - 内存队列
+        - [JDK DelayQueue](dq/index.md)
+    - 时间轮算法
+        - [Netty的HashedWheelTimer](dq/index.md)
+        - [Kafka的TimingWheel](dq/index.md)
+- 定时任务
 - 全局控制
-
+- 注册发现
 #### 前端主题
 #### 系统运维
 #### 监控

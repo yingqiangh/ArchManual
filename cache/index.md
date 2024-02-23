@@ -1,1 +1,3 @@
 JD-hotkey
+Caffeine
+Guava
