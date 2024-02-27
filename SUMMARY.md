@@ -7,9 +7,11 @@
     *  [配置中心](config/index.md)
     *  [消息队列](mq/index.md)
     *  [延迟任务](dq/index.md)
-    *  [定时任务](task/index.md)
-    *  注册发现
-    *  全局控制
+    *  [任务调度](task/index.md)    
+    *  [分布式ID](id/index.md)
+    *  [分布式锁](lock/index.md)
+    *  [分布式事务](transaction/index.md)
+    *  [注册发现](registry/index.md)
     *  限流与降级
     *  弹性伸缩
     *  服务治理

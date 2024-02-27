@@ -71,9 +71,45 @@ ArchManual
     - 时间轮算法
         - [Netty的HashedWheelTimer](dq/index.md)
         - [Kafka的TimingWheel](dq/index.md)
-- 定时任务
-- 全局控制
-- 注册发现
+- [任务调度](task/index.md)
+    - [xxl-job](https://github.com/xuxueli/xxl-job)
+    - [Elastic-job](https://github.com/apache/shardingsphere-elasticjob)
+    - [powerJob](https://github.com/PowerJob/PowerJob)
+    - [Saturn](https://github.com/vipshop/Saturn)
+    - [Quartz](https://github.com/quartz-scheduler/quartz)
+- [分布式ID](id/index.md)
+    - [Snowflake(雪花算法）](dq/index.md)
+    - [Redis 自增ID](dq/index.md)
+    - [美团 Leaf](dq/index.md)
+- [分布式锁](lock/index.md)
+    - [Redis ](dq/index.md)
+    - [Zookeeper](dq/index.md)
+    - [Etcd](dq/index.md)
+- [分布式事务](transaction/index.md)
+    - XA
+        - [ShardingSpere]()
+        - [MyCat]()
+        - [Spring JTA]()
+    - 同步调用
+        - TCC(Try/Confirm/Cancel)
+            - [byteTCC]()
+            - [tcc-transaction]()
+            - [easy-transaction]()
+            - [Hmily]()
+        - Saga
+            - [Ali Seata]()
+    - 异步调用
+        - MQ支持可靠消息(RocketMQ)
+        - 可靠消息服务+MQ
+        - 本地消息表 + MQ 
+    - [Spring Task](dq/index.md)
+    - [XXL-Job](dq/index.md)
+    - [Elastic-Job](dq/index.md)
+- [注册发现](registry/index.md)
+    - [Eureka + Ribbon]()
+    - [Nacos]()
+    - [Consul]()
+    - [Zookeeper]()
 #### 前端主题
 #### 系统运维
 #### 监控
