@@ -82,10 +82,10 @@ RocketMQ 5.x 支持任意时长的的延时消息，推荐使用
 （1）在RocketMQ中，使用了经典的时间轮算法。通过TimerWheel来描述时间轮不同的时刻，通过TimerLog来记录不同时刻的消息。    
 
 （2）TimerWheel中的每一格代表着一个时刻，同时会有一个firstPos指向这个刻度下所有定时消息的首条TimerLog记录的地址，一个lastPos指向这个刻度下所有定时消息最后一条TimerLog的记录的地址。并且，对于所处于同一个刻度的的消息，其TimerLog会通过prevPos串联成一个链表。
-![时间轮](/dq/images/rocketmq_timewheel.jpg)  
+![时间轮](/backend/dqckend/dq/images/rocketmq_timewheel.jpg)  
 
 （3）当需要新增一条记录的时候，例如现在我们要新增一个 “1-4”。那么就将新记录的 prevPos 指向当前的 lastPos，即 “1-3”，然后修改 lastPos 指向 “1-4”。这样就将同一个刻度上面的 TimerLog 记录全都串起来了。
-![时间轮](/dq/images/rocketmq_timewheel_2.jpg)  
+![时间轮](/backend/dqckend/dq/images/rocketmq_timewheel_2.jpg)  
 
 **优缺点** 
 
@@ -109,7 +109,7 @@ Redis过期通知也是不可靠的，不建议使用。
 
 **原理**  
 
-![Redis zset 流程图](/dq/images/Redis%20Zset.png) 
+![Redis zset 流程图](/backend/dqckend/dq/images/Redis%20Zset.png) 
 
 - 添加延时消息
 ```java

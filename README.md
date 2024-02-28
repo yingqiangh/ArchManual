@@ -35,12 +35,12 @@ ArchManual
 - [人工智能](#人工智能)  
 
 #### 后端主题
-- [配置中心](config/index.md)  
+- [配置中心](backend/config/index.md)  
     - [Apollo](https://github.com/apolloconfig/apollo)
     - [Nacos](https://github.com/alibaba/nacos)
     - [Spring Config](https://github.com/spring-cloud/spring-cloud-config)
     - [Disconf](https://github.com/knightliao/disconf)
-- [消息队列](mq/index.md)
+- [消息队列](backend/mq/index.md)
     - 分布式消息队列
         - [Kafka](https://github.com/apache/kafka)
         - [RocketMQ](https://github.com/RocketMQ)
@@ -53,39 +53,39 @@ ArchManual
         - [EMQX](https://github.com/emqx/emqx)
         - [Mosquitto](https://github.com/eclipse/mosquitto)
         - [NanoMQ](https://github.com/nanomq/nanomq)
-- [延迟任务](dq/index.md)
+- [延迟任务](backend/dq/index.md)
     - 消息队列
-        - [RabbitMQ TTL + 死信队列](dq/index.md)
-        - [RabbitMQ 延迟队列插件(*推荐)](dq/index.md)
-        - [RocketMQ 定时消息(*推荐)](dq/index.md)
+        - [RabbitMQ TTL + 死信队列](backend/dq/index.md)
+        - [RabbitMQ 延迟队列插件(*推荐)](backend/dq/index.md)
+        - [RocketMQ 定时消息(*推荐)](backend/dq/index.md)
     - Redis缓存
-        - [定时轮询zset](dq/index.md)
-        - [Redis Key过期监听](dq/index.md)
-        - [Redisson 分布式延迟队列 RDelayedQueue (*推荐)](dq/index.md)
+        - [定时轮询zset](backend/dq/index.md)
+        - [Redis Key过期监听](backend/dq/index.md)
+        - [Redisson 分布式延迟队列 RDelayedQueue (*推荐)](backend/dq/index.md)
     - 定时轮询
-        - [Spring Task](dq/index.md)
-        - [XXL-Job](dq/index.md)
-        - [Elastic-Job](dq/index.md)
+        - [Spring Task](backend/dq/index.md)
+        - [XXL-Job](backend/dq/index.md)
+        - [Elastic-Job](backend/dq/index.md)
     - 内存队列
-        - [JDK DelayQueue](dq/index.md)
+        - [JDK DelayQueue](backend/dq/index.md)
     - 时间轮算法
-        - [Netty的HashedWheelTimer](dq/index.md)
-        - [Kafka的TimingWheel](dq/index.md)
-- [任务调度](task/index.md)
+        - [Netty的HashedWheelTimer](backend/dq/index.md)
+        - [Kafka的TimingWheel](backend/dq/index.md)
+- [任务调度](backend/task/index.md)
     - [xxl-job](https://github.com/xuxueli/xxl-job)
     - [Elastic-job](https://github.com/apache/shardingsphere-elasticjob)
     - [powerJob](https://github.com/PowerJob/PowerJob)
     - [Saturn](https://github.com/vipshop/Saturn)
     - [Quartz](https://github.com/quartz-scheduler/quartz)
-- [分布式ID](id/index.md)
-    - [Snowflake(雪花算法）](dq/index.md)
-    - [Redis 自增ID](dq/index.md)
-    - [美团 Leaf](dq/index.md)
-- [分布式锁](lock/index.md)
-    - [Redis ](dq/index.md)
-    - [Zookeeper](dq/index.md)
-    - [Etcd](dq/index.md)
-- [分布式事务](transaction/index.md)
+- [分布式ID](backend/id/index.md)
+    - [Snowflake(雪花算法）](backend/dq/index.md)
+    - [Redis 自增ID](backend/dq/index.md)
+    - [美团 Leaf](backend/dq/index.md)
+- [分布式锁](backend/lock/index.md)
+    - [Redis ](backend/dq/index.md)
+    - [Zookeeper](backend/dq/index.md)
+    - [Etcd](backend/dq/index.md)
+- [分布式事务](backend/transaction/index.md)
     - XA
         - [ShardingSpere]()
         - [MyCat]()
@@ -102,18 +102,137 @@ ArchManual
         - MQ支持可靠消息(RocketMQ)
         - 可靠消息服务+MQ
         - 本地消息表 + MQ 
-    - [Spring Task](dq/index.md)
-    - [XXL-Job](dq/index.md)
-    - [Elastic-Job](dq/index.md)
-- [注册发现](registry/index.md)
+- [注册发现](backend/registry/index.md)
     - [Eureka + Ribbon]()
     - [Nacos]()
     - [Consul]()
     - [Zookeeper]()
+- [限流与降级](backend/fallback/index.md)
+    - [Hystrix]()
+    - [Sentinel]()
+- [负载均衡](backend/loadbalance/index.md)
+    - HttpDNS
+    - DNS
+    - F5(硬件）
+    - LVS（4层）
+    - Nginx（7层）
+    - HAProxy
+- [数据库连接池](backend/dbpool/index.md)
+    - Druid
+    - HikariCP
+    - DBCP2
+- [流程引擎](backend/workflow/index.md)
+    - activiti
+    - flowable
+    - camunda
+- [服务容器](backend/server/index.md)
+    - Tomcat
+    - Netty
+    - Jetty
+- [服务调用](backend/rpc/index.md)
+    - RPC
+        - Dubbo
+        - DubboX
+    - HTTP
+        - OpenFeign
+        - RestTemplate
+- [网关](backend/gateway/index.md)
+    - Nginx + Lua
+    - KONG（基于OpenResty)
+    - Zuul
+    - Ali Sentinel(限流）
+- [存储](backend/storage/index.md)
+    - 分布式文件系统
+        - Ali OSS
+        - Ceph
+    - NoSQL
+        - 文档数据库
+            - MongoDB
+        - KV
+            - Redis（CA模型）
+            - etcd（CP模型）
+    - NewSQL
+        - TiDB
+    - 时序
+        - InfluxDB
+    - 图数据库
+        - Neo4J
+    - 搜索
+        - ElasticeSearch
+    - 向量数据库
+- [仓库](backend/warehouse/index.md)
+    - 代码仓库
+        - gitlab
+    - maven仓库
+        - nexus
+    - docker镜像仓库
+        - docker registry
+- [分布式数据库](backend/rdms/index.md)
+    - 分库分表
+        - ShardingSphere(Sharding-JDBC)
+        - MyCat
+    - 存储引擎
+        - 事务
+            - InnoDB
+        - 顺序写
+            - TokuDB
+    - 高可用
+        - MHA
+    - 数据同步
+        - 阿里云DTS
+        - binlog消费订阅
+            - canal
+            - databus
+        - 增量数据同步
+            - otter
+        - 全量离线数据同步
+            - kettle
+    - 数据可视化
+        - superset
+        - Redash
+- [集群管理](backend/cluster/index.md)
+    - 元数据协调管理
+        - Zookeeper
+        - gossip
+    - IP地址切换
+        - VIP
+        - Keepalived
+- [缓存](backend/cache/index.md)
+    - CDN层
+        - ATS(Apache Traffic Server）
+        - Squid
+    - HTTP层
+    - 应用层
+        - Caffeine
+        - Guava
+        - ehcache
+    - 分布式缓存
+        - Redis
+        - JD-hotkey
+- [压测](backend/stress/index.md)
+    - 线下
+        - Apache ab
+        - Apache Jmeter
+    - 线上
+        - Tcpcopy
+    - 流量存储和回放
+        - GoReplay
+- [KV存储](backend/kv/index.md)
+    - LevelDB
+    - RocksDB
+    - BeansDB
+    - LMDB
+    - Riak
+- [Java工具包](backend/tools/index.md)
+    - guava
 #### 前端主题
 #### 系统运维
 #### 监控
 #### 大数据
+- [流式计算](bigdata/stream/index.md)
+    - Spark Streaming
+    - Apache Storm
+    - Flink
 #### 系统安全
 #### 通用架构
 #### 人工智能
