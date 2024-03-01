@@ -223,16 +223,80 @@ ArchManual
     - BeansDB
     - LMDB
     - Riak
+- [弹性伸缩](backend/elastic/index.md)
+    - K8S + Docker
+    - 云计算
+        - 阿里云
+        - 腾讯云
 - [Java工具包](backend/tools/index.md)
     - guava
 #### 前端主题
 #### 系统运维
-#### 监控
+- [仓库管理](ops/repo/index.md)
+    - 代码仓库
+        - gitlab
+    - maven仓库
+        - nexus
+    - docker镜像仓库
+        - docker registry
+- [部署容器](ops/deploy/index.md)
+    - Docker + K8S
+        - docker跨主机组网
+            - 原生
+                - overlay
+                - macvlan
+            - 第三方
+                - Flannel
+                - OpenSwitch
+                - weave
+                - calico
+    - 云服务
+        - Aliyun ECS
+- [DevOps](ops/devops/index.md) 
+    - Gitlab CI / CD
+    - Jenkins
+- [监控](ops/monitor/index.md)
+    - [服务器](ops/monitor/server/index.md)
+        - OpenFalcon
+        - Zabbix + Grafana
+    - [调用链](ops/monitor/chain/index.md)
+        - Pinpoint
+        - Skywalking
+        - CAT
+        - SpringCloud Sleuth + Zipkin
+    - [业务](ops/monitor/biz/index.md)
+        - Falcon
+        - CAT metrics
+        - Micrometer
+    - [JVM](ops/monitor/jvm/index.md)
+        - arthas
+    - [日志](ops/monitor/log/index.md)
+        - ELK
+            - FileBeats 采集
+            - Kafka 日志队列
+            - Logstack 计算
+            - ElasticSearch 存储
+            - Kibana 展示
+        - Flume + Hadoop
 #### 大数据
 - [流式计算](bigdata/stream/index.md)
     - Spark Streaming
     - Apache Storm
     - Flink
+- [分布式文件系统](bigdata/fs/index.md)
+    - HDFS
+- [BigTable](bigdata/bigtable/index.md)
+    - HBase
+- [计算框架](bigdata/compute/index.md)
+    - Hadoop MapReduce
+    - Spark
+- [流式计算](bigdata/stream/index.md)
+    - Spark Streaming
+    - Apache Storm
+    - Flink
+- [数据分析](bigdata/analyze/index.md)
+    - Hive
+- 数据可视化
 #### 系统安全
 #### 通用架构
 #### 人工智能
