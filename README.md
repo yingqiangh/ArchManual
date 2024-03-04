@@ -311,12 +311,12 @@ ArchManual
     - [输入输出](security/application/inout/index.md)
     - [加密算法](security/application/encryption/index.md)
 - 运维层
-    _ [主机安全](security/ops/host/index.md)
-    _ [密钥全生命周期管理](security/ops/key/index.md)
-    _ [证书管理](security/ops/certificate/index.md)
-    _ [资源控制](security/ops/resource/index.md)
-    _ [配置文件管理](security/ops/config/index.md)
-    _ [中间件运维](security/ops/middleware/index.md)
+    - [主机安全](security/ops/host/index.md)
+    - [密钥全生命周期管理](security/ops/key/index.md)
+    - [证书管理](security/ops/certificate/index.md)
+    - [资源控制](security/ops/resource/index.md)
+    - [配置文件管理](security/ops/config/index.md)
+    - [中间件运维](security/ops/middleware/index.md)
 - 代码层
     - [源代码保护](security/code/source/index.md)
     - [代码审计](security/code/audit/index.md)
