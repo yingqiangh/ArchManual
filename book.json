@@ -1,6 +1,9 @@
 {
   "title": "ArchManual",
   "plugins": [
+    "sitemap",
+    "sitemap-general",
+    "github",
     "hide-element",
     "expandable-chapters",
     "back-to-top-button",
@@ -18,6 +21,16 @@
     "sharing-plus"
   ],
   "pluginsConfig": {
+      "sitemap": {
+        "hostname": "https://www.archmanual.com"
+      },
+
+      "sitemap-general": {
+        "prefix": "https://www.archmanual.com"
+      },
+      "github": {
+        "url":"https://github.com/yingqiangh/ArchManual"
+      },
       "hide-element": {
         "elements": [".gitbook-link"]
       },
@@ -32,14 +45,6 @@
           "modify_format": "YYYY-MM-DD HH:mm:ss"
       },
       "sharing": {
-          "douban": true,
-          "facebook": true,
-          "google": true,
-          "pocket": true,
-          "qq": true,
-          "qzone": true,
-          "twitter": true,
-          "weibo": true,
           "all": [
               "douban",
               "facebook",

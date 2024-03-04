@@ -296,7 +296,37 @@ ArchManual
     - Flink
 - [数据分析](bigdata/analyze/index.md)
     - Hive
+    - impala
 - 数据可视化
 #### 系统安全
-#### 通用架构
+- 应用层
+    - [账号生命周期](security/application/account/index.md)
+    - [授权](security/application/auth/index.md)
+    - [接口安全](security/application/interface/index.md)
+    - [操作日志审计](security/application/oplog/index.md)
+    - [重要漏洞防范](security/application/leak/index.md)
+    - [软件容错](security/application/fault_back/index.md)
+    - [错误处理](security/application/error/index.md)
+    - [文件操作](security/application/file/index.md)
+    - [输入输出](security/application/inout/index.md)
+    - [加密算法](security/application/encryption/index.md)
+- 运维层
+    _ [主机安全](security/ops/host/index.md)
+    _ [密钥全生命周期管理](security/ops/key/index.md)
+    _ [证书管理](security/ops/certificate/index.md)
+    _ [资源控制](security/ops/resource/index.md)
+    _ [配置文件管理](security/ops/config/index.md)
+    _ [中间件运维](security/ops/middleware/index.md)
+- 代码层
+    - [源代码保护](security/code/source/index.md)
+    - [代码审计](security/code/audit/index.md)
+    - [环境管理](security/code/env/index.md)
+    - [版本控制](security/code/version/index.md)
+    - [检测工具](security/code/check/index.md)
+- 数据层
+    - [数据分级](security/data/clasification/index.md)
+    - [数据脱敏](security/data/mask/index.md)
+    - [数据加密](security/data/encryption/index.md)
+    - [数据灾备](security/data/backup/index.md)
 #### 人工智能
+#### 通用架构
