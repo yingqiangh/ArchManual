@@ -28,6 +28,7 @@
     *  [缓存](backend/cache/index.md)
     *  [压测](backend/stress/index.md)
     *  [KV存储](backend/kv/index.md)
+    *  [一致性算法](backend/consistent/index.md)
     *  用户行为分析（埋点）
     *  Spring Project 有哪些
     *  [Java工具包](backend/tools/index.md)
@@ -56,52 +57,53 @@
     *  数据可视化
 * 系统安全
     *  应用层
-        * 账号生命周期
-        * 授权
-        * 接口安全
-        * 操作日志审计
-        * 重要漏洞防范
-        * 软件容错
-        * 错误处理
-        * 文件操作
-        * 输入输出
-        * 加密算法
+        * [账号生命周期](security/application/account/index.md)
+        * [授权](security/application/auth/index.md)
+        * [接口安全](security/application/interface/index.md)
+        * [操作日志审计](security/application/oplog/index.md)
+        * [重要漏洞防范](security/application/leak/index.md)
+        * [软件容错](security/application/fault_back/index.md)
+        * [错误处理](security/application/error/index.md)
+        * [文件操作](security/application/file/index.md)
+        * [输入输出](security/application/inout/index.md)
+        * [加密算法](security/application/encryption/index.md)
     *  运维层
-        * 主机安全
-        * 密钥全生命周期管理
-        * 证书管理
-        * 资源控制
-        * 配置文件管理
-        * 中间件运维
+        * [主机安全](security/ops/host/index.md)
+        * [密钥全生命周期管理](security/ops/key/index.md)
+        * [证书管理](security/ops/certificate/index.md)
+        * [资源控制](security/ops/resource/index.md)
+        * [配置文件管理](security/ops/config/index.md)
+        * [中间件运维](security/ops/middleware/index.md)
     *  代码层
-        * 源代码保护
-        * 代码审计
-        * 环境管理
-        * 版本控制
-        * 检测工具
+        * [源代码保护](security/code/source/index.md)
+        * [代码审计](security/code/audit/index.md)
+        * [环境管理](security/code/env/index.md)
+        * [版本控制](security/code/version/index.md)
+        * [检测工具](security/code/check/index.md)
     *  数据层
-        * 数据分级
-        * 数据脱敏
-        * 数据加密
-        * 数据灾备
+        * [数据分级](security/data/clasification/index.md)
+        * [数据脱敏](security/data/mask/index.md)
+        * [数据加密](security/data/encryption/index.md)
+        * [数据灾备](security/data/backup/index.md)
 * 人工智能
-    *  机器学习
-    *  深度学习
+    *  [特征工程](ai/feature/index.md)
+    *  [机器学习](ai/ml/index.md)
+    *  [深度学习](ai/dl/index.md)
+    *  [联邦学习](ai/fl/index.md)
+    *  [迁移学习](ai/tl/index.md)
+    *  [自动机器学习](ai/automl/index.md)
     *  大模型
         * 基础设施
-            * 向量数据库
-            * 数据库支持向量
-            * 大模型框架
-            * 大模型训练平台
-        * 大模型
+            * [向量数据库](ai/llm/infra/vector/index.md)
+            * [数据库支持向量](ai/llm/infra/db_vector/index.md)
+            * [大模型框架](ai/llm/infra/framework/index.md)
+            * [大模型训练平台](ai/llm/infra/train/index.md)
+        * [大模型](ai/llm/llm/index.md)
             * 国内
             * 国外
         * 工具
-            * 大模型运维
-            * 大模型聚合
-            * 开发工具
+            * [大模型运维](ai/llm/tool/ops/index.md)
+            * [大模型聚合](ai/llm/tool/aggregation/index.md)
+            * [开发工具](ai/llm/tool/dev/index.md)
         * 应用
-            * 
         * 智能体
-* 通用架构
-    *  一致性算法

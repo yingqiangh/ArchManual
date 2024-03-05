@@ -230,7 +230,15 @@ ArchManual
         - 腾讯云
 - [Java工具包](backend/tools/index.md)
     - guava
+- [一致性算法](backend/consistent/index.md)
+    - 强一致性
+        - Paxos
+        - Raft
+        - ZAB
+    - 弱一致性
+        - Gossip
 #### 前端主题
+
 #### 系统运维
 - [仓库管理](ops/repo/index.md)
     - 代码仓库
@@ -278,6 +286,7 @@ ArchManual
             - ElasticSearch 存储
             - Kibana 展示
         - Flume + Hadoop
+
 #### 大数据
 - [流式计算](bigdata/stream/index.md)
     - Spark Streaming
@@ -298,6 +307,7 @@ ArchManual
     - Hive
     - impala
 - 数据可视化
+
 #### 系统安全
 - 应用层
     - [账号生命周期](security/application/account/index.md)
@@ -328,5 +338,49 @@ ArchManual
     - [数据脱敏](security/data/mask/index.md)
     - [数据加密](security/data/encryption/index.md)
     - [数据灾备](security/data/backup/index.md)
+
 #### 人工智能
+-  [特征工程](ai/feature/index.md)
+    - [Featuretools](https://github.com/alteryx/featuretools)
+    - [Boruta-py](https://github.com/scikit-learn-contrib/boruta_py)
+    - [Categorical-encoding](https://github.com/scikit-learn-contrib/category_encoders)
+    - [Tsfresh](https://github.com/blue-yonder/tsfresh)
+-  [机器学习](ai/ml/index.md)
+    - [sklean](https://scikit-learn.org/stable/)
+    - [xgboost](https://github.com/dmlc/xgboost)
+    - [LightGBM](https://github.com/microsoft/LightGBM)
+    - [LibSVM](https://github.com/cjlin1/libsvm)
+-  [深度学习](ai/dl/index.md)
+    - [PyTorch](https://github.com/pytorch/pytorch)
+    - [TensorFlow](https://www.tensorflow.org/)
+    - [MXNet](https://github.com/apache/mxnet)
+    - [OneFlow](https://github.com/Oneflow-Inc/oneflow)
+    - [paddlepaddle](https://www.paddlepaddle.org.cn/)
+    - [Keras](https://github.com/keras-team/keras)
+-  [联邦学习](ai/fl/index.md)
+    - [FATE](https://github.com/FederatedAI/FATE)
+    - [PaddleFL](https://github.com/PaddlePaddle/PaddleFL)
+    - [FedML](https://github.com/FedML-AI/FedML)
+    - [TensorFlowFL](https://www.tensorflow.org/federated)
+-  [自动机器学习](ai/automl/index.md)
+    - [AutoSklearn](https://github.com/automl/auto-sklearn)
+    - [AutoKeras](https://autokeras.com/)
+    - [AutoGluon](https://github.com/autogluon/autogluon)
+    - [AutoPyTorch](https://automl.github.io/Auto-PyTorch/development/)
+-  大模型
+    * 基础设施
+        * [向量数据库](ai/llm/infra/vector/index.md)
+        * [数据库支持向量](ai/llm/infra/db_vector/index.md)
+        * [大模型框架](ai/llm/infra/framework/index.md)
+        * [大模型训练平台](ai/llm/infra/train/index.md)
+    * [大模型](ai/llm/llm/index.md)
+        * 国内
+        * 国外
+    * 工具
+        * [大模型运维](ai/llm/tool/ops/index.md)
+        * [大模型聚合](ai/llm/tool/aggregation/index.md)
+        * [开发工具](ai/llm/tool/dev/index.md)
+    * 应用
+    * 智能体
+
 #### 通用架构
