@@ -15,7 +15,8 @@ ArchManual
 **希望成为**：  
 速查手册：平时工作中做技术架构、框架选型时的速查手册    
 学习提纲：业余学习或者面试时的一个学习提纲   
-技术地图：希望能起到一些指引的作用。也希望每个技术小伙伴都能积极参与，分享知识，丰富`ArchManual`
+技术地图：对技术框架有一个整体和全面的了解
+技术社区：希望每个技术同学都能积极分享和交流知识，丰富`ArchManual`
 
 ### 整体概览 
 - 概览图：  
@@ -367,18 +368,47 @@ ArchManual
     - [AutoGluon](https://github.com/autogluon/autogluon)
     - [AutoPyTorch](https://automl.github.io/Auto-PyTorch/development/)
 -  大模型
-    * 基础设施
-        * [向量数据库](ai/llm/infra/vector/index.md)
-        * [数据库支持向量](ai/llm/infra/db_vector/index.md)
-        * [大模型框架](ai/llm/infra/framework/index.md)
-        * [大模型训练平台](ai/llm/infra/train/index.md)
-    * [大模型](ai/llm/llm/index.md)
-        * 国内
-        * 国外
-    * 工具
-        * [大模型运维](ai/llm/tool/ops/index.md)
-        * [大模型聚合](ai/llm/tool/aggregation/index.md)
-        * [开发工具](ai/llm/tool/dev/index.md)
-    * 应用
-    * 智能体
-
+    - 基础设施
+         - [向量数据库](ai/llm/infra/vector/index.md)
+            - [Chroma](https://github.com/chroma-core/chroma)
+            - [Faiss](https://github.com/facebookresearch/faiss)
+            - [Milvus](https://github.com/milvus-io/milvus)
+            - [Weaviate](https://github.com/weaviate/weaviate)
+            - [Pinecone](https://www.pinecone.io/)
+            - [Qdrant](https://qdrant.tech/)
+            - [Vespa](https://vespa.ai/)
+            - [Vald](https://vald.vdaas.org/)
+            - [ScaNN](https://github.com/google-research/google-research/tree/master/scann)
+         - [数据库支持向量](ai/llm/infra/db_vector/index.md)
+           - [Pgvector](https://github.com/pgvector/pgvector)
+           - [Redis]
+           - [Neo4j]
+           - [Elastic]
+           - [OpenSearch]
+           - [Solr]
+           - [Lucene]
+           - [Clickhouse]
+           - [MongoDB]
+         - [大模型框架、微调](ai/llm/infra/framework/index.md)
+           - [LMFlow](https://github.com/OptimalScale/LMFlow)
+           - [LoRA](https://github.com/microsoft/LoRA)
+           - [finetuner](https://finetuner.jina.ai/)
+         - [大模型训练平台](ai/llm/infra/train/index.md)
+    - [大模型](ai/llm/llm/index.md)
+    -   * 国内
+    -   * 国外
+    - 工具
+    -   * [大模型运维](ai/llm/tool/ops/index.md)
+    -   * [大模型聚合](ai/llm/tool/aggregation/index.md)
+    -   * [开发工具](ai/llm/tool/dev/index.md)
+    - 应用
+    - 智能体
+        - [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT)
+        - [AutoGen](https://github.com/microsoft/autogen)
+        - [Langfuse](https://github.com/langfuse/langfuse)
+        - [ChatDev](https://github.com/OpenBMB/ChatDev)
+        - [BabyAGI](https://github.com/yoheinakajima/babyagi)
+        - [CAMEL](https://github.com/camel-ai/camel)
+        - [SuperAGI](https://github.com/TransformerOptimus/SuperAGI)
+        - [MetaGPT](https://github.com/geekan/MetaGPT)
+        - [ShortGPT](https://github.com/RayVentura/ShortGPT)
