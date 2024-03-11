@@ -30,7 +30,6 @@
     *  [KV存储](backend/kv/index.md)
     *  [一致性算法](backend/consistent/index.md)
     *  用户行为分析（埋点）
-    *  Spring Project 有哪些
     *  [Java工具包](backend/tools/index.md)
 * 前端主题
     *  常用框架

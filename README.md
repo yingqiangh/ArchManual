@@ -15,8 +15,8 @@ ArchManual
 **希望成为**：  
 速查手册：平时工作中做技术架构、框架选型时的速查手册    
 学习提纲：业余学习或者面试时的一个学习提纲   
-技术地图：对技术框架有一个整体和全面的了解
-技术社区：希望每个技术同学都能积极分享和交流知识，丰富`ArchManual`
+技术地图：对技术框架有一个整体和全面的了解  
+技术社区：每个技术同学都能积极分享和交流知识
 
 ### 整体概览 
 - 概览图：  
@@ -238,6 +238,39 @@ ArchManual
     - 弱一致性
         - Gossip
 #### 前端主题
+- [常用框架](frontend/framework/index.md)
+    - Web
+      - [Vue](https://vuejs.org/)
+      - [React](https://react.dev/)
+      - [Angular](https://angular.io/)
+    - 小程序
+      - [uni-app](https://uniapp.dcloud.net.cn/)
+    - 桌面
+      - [Electron](https://electronjs.org/)
+- [组件库]
+    - UI
+      - [ElementUI](https://element-plus.org/)
+      - [Ant Design](https://ant.design/index-cn)
+    - 图表
+      - [ECharts](https://echarts.apache.org/zh/index.html)
+      - [D3.js](https://d3js.org/)
+      - [Chartjs](https://www.chartjs.org/)
+    - 科学计算图表
+      - [plotly](https://plotly.com/)
+    - ICON
+      - [ElementUI](https://element-plus.gitee.io/zh-CN/component/icon.html#%E5%9B%BE%E6%A0%87%E9%9B%86%E5%90%88)
+      - [https://www.iconfont.cn/](https://www.iconfont.cn/)
+    - 多功能编辑器
+      - [wangEditor](https://github.com/wangeditor-team/wangEditor)
+      - [CKEditor](https://github.com/ckeditor/ckeditor5)
+    - 流程图
+      - [jsPlumb](https://github.com/jsplumb/jsplumb)
+      - [GoJS](https://github.com/NorthwoodsSoftware/GoJS)
+      - [mermaid](https://github.com/mermaid-js/mermaid)
+      - [LogicFlow](https://github.com/didi/LogicFlow)
+      - [drawio](https://github.com/jgraph/drawio)
+- [性能优化](frontend/performance/index.md)
+- [日志监控](frontend/monitor/index.md)
 
 #### 系统运维
 - [仓库管理](ops/repo/index.md)
@@ -307,7 +340,8 @@ ArchManual
     - Hive
     - impala
 - 数据可视化
-
+    - superset
+    - Redash
 #### 系统安全
 - 应用层
     - [账号生命周期](security/application/account/index.md)
@@ -369,46 +403,106 @@ ArchManual
     - [AutoPyTorch](https://automl.github.io/Auto-PyTorch/development/)
 -  大模型
     - 基础设施
-         - [向量数据库](ai/llm/infra/vector/index.md)
-            - [Chroma](https://github.com/chroma-core/chroma)
-            - [Faiss](https://github.com/facebookresearch/faiss)
-            - [Milvus](https://github.com/milvus-io/milvus)
-            - [Weaviate](https://github.com/weaviate/weaviate)
-            - [Pinecone](https://www.pinecone.io/)
-            - [Qdrant](https://qdrant.tech/)
-            - [Vespa](https://vespa.ai/)
-            - [Vald](https://vald.vdaas.org/)
-            - [ScaNN](https://github.com/google-research/google-research/tree/master/scann)
-         - [数据库支持向量](ai/llm/infra/db_vector/index.md)
-           - [Pgvector](https://github.com/pgvector/pgvector)
-           - [Redis]
-           - [Neo4j]
-           - [Elastic]
-           - [OpenSearch]
-           - [Solr]
-           - [Lucene]
-           - [Clickhouse]
-           - [MongoDB]
-         - [大模型框架、微调](ai/llm/infra/framework/index.md)
-           - [LMFlow](https://github.com/OptimalScale/LMFlow)
-           - [LoRA](https://github.com/microsoft/LoRA)
-           - [finetuner](https://finetuner.jina.ai/)
-         - [大模型训练平台](ai/llm/infra/train/index.md)
+      - [向量数据库](ai/llm/infra/vector/index.md)
+        - [Chroma](https://github.com/chroma-core/chroma)
+        - [Faiss](https://github.com/facebookresearch/faiss)
+        - [Milvus](https://github.com/milvus-io/milvus)
+        - [Weaviate](https://github.com/weaviate/weaviate)
+        - [Pinecone](https://www.pinecone.io/)
+        - [Qdrant](https://qdrant.tech/)
+        - [Vespa](https://vespa.ai/)
+        - [Vald](https://vald.vdaas.org/)
+        - [ScaNN](https://github.com/google-research/google-research/tree/master/scann)
+      - [数据库支持向量](ai/llm/infra/db_vector/index.md)
+        - [Pgvector](https://github.com/pgvector/pgvector)
+        - [Redis]
+        - [Neo4j]
+        - [Elastic]
+        - [OpenSearch]
+        - [Solr]
+        - [Lucene]
+        - [Clickhouse]
+        - [MongoDB]
+      - [大模型框架、微调](ai/llm/infra/framework/index.md)
+        - [LMFlow](https://github.com/OptimalScale/LMFlow)
+        - [LoRA](https://github.com/microsoft/LoRA)
+        - [finetuner](https://finetuner.jina.ai/)
+        - [PEFT](https://github.com/huggingface/peft)
+        - [alpaca-lora](https://github.com/tloen/alpaca-lora)
+        - [ChatGLM-Efficient-Tuning](https://github.com/hiyouga/ChatGLM-Efficient-Tuning)
+        - [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)
+        - [xTuring](https://github.com/stochasticai/xTuring)
+        - [YiVal](https://github.com/YiVal/YiVal)
+        - [P-tuning-v2](https://github.com/THUDM/P-tuning-v2)
+        - [h2o-llmstudio](https://github.com/h2oai/h2o-llmstudio)
+        - [OpenLLM](https://github.com/bentoml/OpenLLM)
+      - [大模型训练平台](ai/llm/infra/train/index.md)
+        - [DeepSpeed](https://github.com/microsoft/DeepSpeed)
+        - [TensorFlow](https://github.com/tensorflow/tensorflow)
+        - [MindSpore](https://github.com/mindspore-ai/mindspore)
+        - [PyTorch](https://github.com/pytorch/pytorch)
+        - [ColossalAI](https://github.com/hpcaitech/ColossalAI)
+        - [MXNet](https://github.com/apache/mxnet)
+        - [Transformers](https://github.com/huggingface/transformers)
+        - [RAY](https://github.com/ray-project/ray)
+        - [Paddle](https://github.com/PaddlePaddle/Paddle)
     - [大模型](ai/llm/llm/index.md)
-    -   * 国内
-    -   * 国外
+        - 国内 
+            - 文心一言
+            - 通义大模型
+            - 盘古
+            - 百川智能
+            - ChatGLM
+        - 国外
+            - DALL.E 3
+            - OpenLLaMa
+            - LLama2
+            - Stable Diffusion
+            - Dolly
+            - PaLM2
+            - StableLM
+            - GPT-4
+            - Falcon
+            - [BLOOM](https://bloomai.co/)
+            - [TII](https://www.tii.ae/)
     - 工具
-    -   * [大模型运维](ai/llm/tool/ops/index.md)
-    -   * [大模型聚合](ai/llm/tool/aggregation/index.md)
-    -   * [开发工具](ai/llm/tool/dev/index.md)
+      - [大模型运维](ai/llm/tool/ops/index.md)
+        - BentoML
+        - LangChain
+        - Dify.AI
+        - FlowiseAI
+        - Phoenix
+        - GPTCache
+      - [大模型聚合](ai/llm/tool/aggregation/index.md)
+        - HuggingFace
+        - ModelScope
+        - SOTA
+        - Gitee AI
+      - [开发工具](ai/llm/tool/dev/index.md)
+        - V0.DEV
+        - MarkerSuite
+        - txtai
+        - codium
+        - imgcook
+        - Jina
+        - Project IDX
+        - Quest AI
     - 应用
+      - ChatGPT
+      - BING
+      - DragGAN
+      - Claude
+      - Cursor
+      - Bard
+      - MidJourney
+      - Mochi Diffusion
     - 智能体
-        - [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT)
-        - [AutoGen](https://github.com/microsoft/autogen)
-        - [Langfuse](https://github.com/langfuse/langfuse)
-        - [ChatDev](https://github.com/OpenBMB/ChatDev)
-        - [BabyAGI](https://github.com/yoheinakajima/babyagi)
-        - [CAMEL](https://github.com/camel-ai/camel)
-        - [SuperAGI](https://github.com/TransformerOptimus/SuperAGI)
-        - [MetaGPT](https://github.com/geekan/MetaGPT)
-        - [ShortGPT](https://github.com/RayVentura/ShortGPT)
+      - [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT)
+      - [AutoGen](https://github.com/microsoft/autogen)
+      - [Langfuse](https://github.com/langfuse/langfuse)
+      - [ChatDev](https://github.com/OpenBMB/ChatDev)
+      - [BabyAGI](https://github.com/yoheinakajima/babyagi)
+      - [CAMEL](https://github.com/camel-ai/camel)
+      - [SuperAGI](https://github.com/TransformerOptimus/SuperAGI)
+      - [MetaGPT](https://github.com/geekan/MetaGPT)
+      - [ShortGPT](https://github.com/RayVentura/ShortGPT)
