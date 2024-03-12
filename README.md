@@ -25,7 +25,6 @@ ArchManual
 [思维导图](https://www.processon.com/view/link/65b74ca5ec61176de3760fc3)
 
 ### 导航
-
 - [后端主题](#后端主题)
 - [前端主题](#前端主题)
 - [系统运维](#系统运维)
@@ -237,6 +236,7 @@ ArchManual
         - ZAB
     - 弱一致性
         - Gossip
+
 #### 前端主题
 - [常用框架](frontend/framework/index.md)
     - Web
@@ -342,6 +342,7 @@ ArchManual
 - 数据可视化
     - superset
     - Redash
+
 #### 系统安全
 - 应用层
     - [账号生命周期](security/application/account/index.md)

@@ -2,6 +2,8 @@
   "title": "ArchManual",
   "plugins": [
     "sitemap",
+    "changyan",
+    "gtalk",
     "sitemap-general",
     "github",
     "hide-element",
@@ -17,10 +19,29 @@
     "popup",
     "-sharing",
     "sharing-plus",
+    "donate",
     "icp",
     "statistics"
   ],
   "pluginsConfig": {
+      "gtalk": {
+        "clientID": "629ef72a99db4bf8052f",
+        "clientSecret": "7f1ec5fa0d83b1fb92b130b1818266e65df0f7c0",
+        "repo": "ArchManual",
+        "owner": "yingqiangh",
+        "admin": ["yingqiangh"]
+      },
+      "changyan": {
+        "appid": "cyxbS5CsX",
+        "conf": "prod_3aed4cc9d9a4a0d1c8f3f391f65eb433"
+      },
+      "donate": {
+        "wechat": "微信收款二维码URL",
+        "alipay": "支付宝收款二维码URL",
+        "button": "打赏",
+        "alipayText": "支付宝",
+        "wechatText": "微信"
+      },
       "statistics": {
         "bd_token": "83ff7e38d484422b79e9da787a591fd5",
         "google_id": "G-W7031KVF4C"
