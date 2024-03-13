@@ -2,7 +2,6 @@
   "title": "ArchManual",
   "plugins": [
     "sitemap",
-    "changyan",
     "gtalk",
     "sitemap-general",
     "github",
@@ -31,13 +30,9 @@
         "owner": "yingqiangh",
         "admin": ["yingqiangh"]
       },
-      "changyan": {
-        "appid": "cyxbS5CsX",
-        "conf": "prod_3aed4cc9d9a4a0d1c8f3f391f65eb433"
-      },
       "donate": {
-        "wechat": "微信收款二维码URL",
-        "alipay": "支付宝收款二维码URL",
+        "wechat": "/images/weixin.png",
+        "alipay": "/images/alipay.png",
         "button": "打赏",
         "alipayText": "支付宝",
         "wechatText": "微信"
@@ -70,16 +65,15 @@
       "favicon": "images/fav.ico",
       "sharing": {
           "all": [
-              "douban",
-              "facebook",
-              "google",
-              "instapaper",
-              "linkedin",
-              "twitter",
               "weibo",
-              "messenger",
               "qq",
               "qzone",
+              "douban",
+              "facebook",
+              "messenger",
+              "google",
+              "linkedin",
+              "twitter",
               "viber",
               "whatsapp"
           ]

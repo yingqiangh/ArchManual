@@ -170,6 +170,8 @@ ArchManual
     - 分库分表
         - ShardingSphere(Sharding-JDBC)
         - MyCat
+        - [DBProxy](https://github.com/Meituan-Dianping/DBProxy)
+        - [Atlas](https://github.com/Qihoo360/Atlas)
     - 存储引擎
         - 事务
             - InnoDB

@@ -1,14 +1,14 @@
-### 延迟任务
-#### 场景
+# 延迟任务
+## 场景
 - **订单超时自动取消**：延迟任务典型的使用场景是订单超时自动取消。
 
-#### 功能
+## 功能
 - **精确的时间控制**：延时任务的时间控制要尽量准确。
 - **可靠性**：延时任务的处理要是可靠的，确保所有任务最终都能被执行。这通常要求延时任务的方案使用的中间件最好要具备任务持久化的能力，以防系统故障导致任务丢失。
 
-#### 方案
-##### 1.基于消息队列
-###### # RabbitMQ TTL + 死信队列
+## 方案
+### 1. 基于消息队列
+#### 1.1 RabbitMQ TTL + 死信队列
 **原理**  
 
 RabbitMQ 可以针对 Queue 和 Message 设置 x-message-tt，来控制消息的生存时间，如果超时，则消息变为 dead letter。
@@ -37,7 +37,7 @@ RabbitMQ 的 Queue 可以配置 x-dead-letter-exchange 和 x-dead-letter-routing
     - 不灵活，只能支持固定延时等级。
     - 使用复杂，要配置一堆延时队列。   
 
-###### # RabbitMQ 延迟队列插件(<font color="#dd0000">*推荐</font>)  
+#### 1.2 RabbitMQ 延迟队列插件(<font color="#dd0000">*推荐</font>)  
 
 **原理**
 - 延迟交换类型：该插件引入了一个新的交换类型 - `x-delayed-message`。这种类型的交换机类似于常规的直接（direct）、主题（topic）或扇形（fanout）交换机，但它增加了对消息延迟的支持。
@@ -73,7 +73,7 @@ channel.basicPublish("my-exchange", "", props.build(), messageBodyBytes);
     - 超过百万的数据量不要使用(和RabbitMQ自身有关)，内存和CPU使用量急剧上升;
     - 需要确保版本兼容，不要使用过高版本的容易出现问题;
 
-###### # RocketMQ 定时消息(<font color="#dd0000">*推荐</font>)
+#### 1.3 RocketMQ 定时消息(<font color="#dd0000">*推荐</font>)
 RocketMQ 4.x 只支持固定时长(1s 5s 10s 30s 1m 2m 3m 4m 5m 6m 7m 8m 9m 10m 20m 30m 1h 2h)的延时消息  
 RocketMQ 5.x 支持任意时长的的延时消息，推荐使用
 
@@ -97,14 +97,14 @@ RocketMQ 5.x 支持任意时长的的延时消息，推荐使用
     - 海量 消息场景，存储成本高： 在海量订单场景中，如果每个订单需要新增一个定时消息，且不会马上消费，额外给MQ带来很大的存储成本。
     - 如果将大量定时消息的定时时间设置为同一时刻，会造成系统压力过大，导致消息分发延迟，影响定时精度。
     
-##### 2.基于Redis
-###### # Redis Key过期监听
+### 2. 基于Redis
+#### 2.1 Redis Key过期监听
 
 用 Redis 的 Keyspace Notifications。中文翻译就是键空间机制，就是利用该机制可以在 key 失效之后，提供一个回调，实际上是 Redis 会给客户端发送一个消息。是需要 Redis 版本 2.8 以上。
 
 Redis过期通知也是不可靠的，不建议使用。
 
-###### # 定时轮询 zset
+#### 2.2 定时轮询 zset
 利用 Redis 的 zset。zset 是一个有序集合，每一个元素（member）都关联了一个 score，通过 score 排序来取集合中的值。
 
 **原理**  
@@ -171,7 +171,7 @@ void consumeMsg(orderId){
     - 处理消息异常时可能要实现重试机制
     - 可靠性问题，比如是先删数据在处理订单还是先处理订单再删除数据，处理异常时可能会导致数据丢失。
 
-###### # Redisson 分布式延迟队列 RDelayedQueue (<font color="#dd0000">*推荐</font>)
+#### 2.3 Redisson 分布式延迟队列 RDelayedQueue (<font color="#dd0000">*推荐</font>)
 
 **原理**
 - 数据结构  
@@ -281,7 +281,7 @@ if (delay > 10) {
 - 阻塞方式从 `target_queue` 获取任务，使用Redis命令 `bpop`
 - 获取到任务之后，做具体的任务执行
 
-##### 3.定时轮询
+### 3. 定时轮询
 用分布式任务中间件开启一个调度任务，某个一定的时间段执行一次任务，从数据库中获取过期数据，然后执行具体的业务逻辑。 
 - 适合场景：时间精度要求不高、数据量不大
 - 常用的一些分布式任务调度中间件：
@@ -291,8 +291,8 @@ if (delay > 10) {
 - 优点：这个方案的优点也是比较简单，实现起来比较容易 
 - 缺点：时间不精准、无法处理大订单量、对数据库造成压力、分库分表问题。 
 
-##### 4.内存队列
-###### # JDK DelayQueue
+### 4. 内存队列
+#### 4.1 JDK DelayQueue
 DelayQueue 是一个 BlockingQueue （无界阻塞）队列，它本质就是封装了一个 PriorityQueue （优先级队列），并加上了延时功能。
 DelayQueue 就是一个使用优先队列（PriorityQueue）实现的 BlockingQueue，优先队列的比较基准值是时间。即：  
 DelayQueue = BlockingQueue + PriorityQueue + Delayed
@@ -317,6 +317,13 @@ while (true) {
 ```
 DelayQueue 实现了一个高效的本地延时队列， 但是缺点就是 不支持多节点部署，多节点部署时，不能同步消息，同步消费，也不能持久化
 
-##### 5.时间轮算法
-###### Netty的HashedWheelTimer
-###### Kafka的TimingWheel
+### 5.时间轮算法
+#### 5.1 Netty的HashedWheelTimer
+#### 5.2 Kafka的TimingWheel
+
+## 工具
+
+推荐
+- 1.2 RabbitMQ 延迟队列插件
+- 1.3 RocketMQ 定时消息
+- 2.3 Redisson 分布式延迟队列 RDelayedQueue
