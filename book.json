@@ -1,5 +1,6 @@
 {
   "title": "ArchManual",
+  "description": "分布式系统架构手册",
   "plugins": [
     "sitemap",
     "gtalk",
@@ -16,11 +17,13 @@
     "insert-logo",
     "custom-favicon",
     "popup",
+    "lightbox",
     "-sharing",
     "sharing-plus",
     "donate",
     "icp",
-    "statistics"
+    "statistics",
+    "seo"
   ],
   "pluginsConfig": {
       "gtalk": {
@@ -29,6 +32,14 @@
         "repo": "ArchManual",
         "owner": "yingqiangh",
         "admin": ["yingqiangh"]
+      },
+      "lightbox": {
+        "includeJQuery": false,
+        "sameUuid": true,
+        "options": {
+          "resizeDuration": 200,
+          "wrapAround": true
+        }
       },
       "donate": {
         "wechat": "/images/weixin.png",
@@ -62,7 +73,7 @@
           "url": "/images/logo.png",
           "style": "background: none; max-height: 30px; min-height: 30px;"
       },
-      "favicon": "images/fav.ico",
+      "favicon": "/images/fav.ico",
       "sharing": {
           "all": [
               "weibo",
@@ -77,6 +88,12 @@
               "viber",
               "whatsapp"
           ]
+      },
+      "seo": {
+        "description": "分布式技术手册,包含：后端技术、前端技术、运维、监控、安全、大数据、人工智能",
+        "noindex": false,
+        "title": "分布式技术手册",
+        "keywords": "分布式,技术机构,系统架构,Java技术栈,微服务"
       }
   }
 }

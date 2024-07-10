@@ -1,30 +1,35 @@
 # ArchManual
 
-### 项目介绍
+分布式系统架构手册
+
+## 项目介绍
+
 ArchManual  
 **不是**：   
 某个技术架构的深度剖析  
 某个技术框架的源码分析  
 某个技术工具的安装运维   
 某个技术类库的代码示例   
+
 **而是**：  
 常用分布式技术的总体概览  
 常用技术主题的归纳总结  
 常用技术框架的归类罗列  
 常用技术架构的简单分享  
+
 **希望成为**：  
 速查手册：平时工作中做技术架构、框架选型时的速查手册    
 学习提纲：业余学习或者面试时的一个学习提纲   
 技术地图：对技术框架有一个整体和全面的了解  
 技术社区：每个技术同学都能积极分享和交流知识
 
-### 整体概览 
+## 整体概览 
 - 概览图：  
-![整体概览](overview/ArchManual.jpg)  
+![整体概览](overview/images/ArchManual.png)  
 - 地址：  
 [思维导图](https://www.processon.com/view/link/65b74ca5ec61176de3760fc3)
 
-### 导航
+## 导航
 - [后端主题](#后端主题)
 - [前端主题](#前端主题)
 - [系统运维](#系统运维)
@@ -33,7 +38,7 @@ ArchManual
 - [系统安全](#系统安全)
 - [人工智能](#人工智能)  
 
-#### 后端主题
+### 后端主题
 - [配置中心](backend/config/index.md)  
     - [Apollo](https://github.com/apolloconfig/apollo)
     - [Nacos](https://github.com/alibaba/nacos)
@@ -120,14 +125,13 @@ ArchManual
     - Druid
     - HikariCP
     - DBCP2
+- [应用服务器](backend/server/index.md)
+    - [Tomcat](https://tomcat.apache.org/)
+    - [Jetty](https://eclipse.dev/jetty/)
 - [流程引擎](backend/workflow/index.md)
     - activiti
     - flowable
     - camunda
-- [服务容器](backend/server/index.md)
-    - Tomcat
-    - Netty
-    - Jetty
 - [服务调用](backend/rpc/index.md)
     - RPC
         - Dubbo
@@ -144,12 +148,11 @@ ArchManual
     - 分布式文件系统
         - Ali OSS
         - Ceph
-    - NoSQL
-        - 文档数据库
-            - MongoDB
-        - KV
-            - Redis（CA模型）
-            - etcd（CP模型）
+    - 文档数据库
+        - MongoDB
+    - KV
+        - Redis（CA模型）
+        - etcd（CP模型）
     - NewSQL
         - TiDB
     - 时序
@@ -159,6 +162,9 @@ ArchManual
     - 搜索
         - ElasticeSearch
     - 向量数据库
+        - Milvus
+    - 分析型数据库（列式时数据库）
+        - Hbase
 - [仓库](backend/warehouse/index.md)
     - 代码仓库
         - gitlab
@@ -210,6 +216,18 @@ ArchManual
     - 分布式缓存
         - Redis
         - JD-hotkey
+- [Redis](backend/redis/redis.md)
+    - 数据类型
+    - 过期策略
+    - IO模型
+    - 主从复制
+    - 高可用
+    - 持久化
+    - 分布式集群 Redis Cluster
+    - 分布式集群 Codis
+    - 常见问题：雪崩、击穿
+    - 双写一致性
+    - Key的优化、监测
 - [压测](backend/stress/index.md)
     - 线下
         - Apache ab
@@ -224,6 +242,9 @@ ArchManual
     - BeansDB
     - LMDB
     - Riak
+- [分布式协调服务](backend/coordination/index.md)
+    - Zookeeper
+    - Etcd
 - [弹性伸缩](backend/elastic/index.md)
     - K8S + Docker
     - 云计算
@@ -239,11 +260,12 @@ ArchManual
     - 弱一致性
         - Gossip
 
-#### 前端主题
+### 前端主题
 - [常用框架](frontend/framework/index.md)
     - Web
       - [Vue](https://vuejs.org/)
       - [React](https://react.dev/)
+      - [NextJs]
       - [Angular](https://angular.io/)
     - 小程序
       - [uni-app](https://uniapp.dcloud.net.cn/)
@@ -261,8 +283,9 @@ ArchManual
       - [plotly](https://plotly.com/)
     - ICON
       - [ElementUI](https://element-plus.gitee.io/zh-CN/component/icon.html#%E5%9B%BE%E6%A0%87%E9%9B%86%E5%90%88)
-      - [https://www.iconfont.cn/](https://www.iconfont.cn/)
+      - [iconfont](https://www.iconfont.cn/](https://www.iconfont.cn/)
     - 多功能编辑器
+      - [quilljs](https://quilljs.com/)
       - [wangEditor](https://github.com/wangeditor-team/wangEditor)
       - [CKEditor](https://github.com/ckeditor/ckeditor5)
     - 流程图
@@ -274,7 +297,7 @@ ArchManual
 - [性能优化](frontend/performance/index.md)
 - [日志监控](frontend/monitor/index.md)
 
-#### 系统运维
+### 系统运维
 - [仓库管理](ops/repo/index.md)
     - 代码仓库
         - gitlab
@@ -322,7 +345,7 @@ ArchManual
             - Kibana 展示
         - Flume + Hadoop
 
-#### 大数据
+### 大数据
 - [流式计算](bigdata/stream/index.md)
     - Spark Streaming
     - Apache Storm
@@ -334,10 +357,6 @@ ArchManual
 - [计算框架](bigdata/compute/index.md)
     - Hadoop MapReduce
     - Spark
-- [流式计算](bigdata/stream/index.md)
-    - Spark Streaming
-    - Apache Storm
-    - Flink
 - [数据分析](bigdata/analyze/index.md)
     - Hive
     - impala
@@ -345,7 +364,7 @@ ArchManual
     - superset
     - Redash
 
-#### 系统安全
+### 系统安全
 - 应用层
     - [账号生命周期](security/application/account/index.md)
     - [授权](security/application/auth/index.md)
@@ -376,7 +395,7 @@ ArchManual
     - [数据加密](security/data/encryption/index.md)
     - [数据灾备](security/data/backup/index.md)
 
-#### 人工智能
+### 人工智能
 -  [特征工程](ai/feature/index.md)
     - [Featuretools](https://github.com/alteryx/featuretools)
     - [Boruta-py](https://github.com/scikit-learn-contrib/boruta_py)
@@ -460,6 +479,7 @@ ArchManual
             - DALL.E 3
             - OpenLLaMa
             - LLama2
+            - [Grok](https://github.com/xai-org/grok-1)
             - Stable Diffusion
             - Dolly
             - PaLM2

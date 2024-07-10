@@ -56,7 +56,7 @@ UUID（Universally Unique Identifier）是一种广泛使用的标识符，旨�
 通过结合时间戳、机器ID和序列号生成64位长的ID，既保证了唯一性，也保证了趋势递增，便于数据库索引。 Twitter的Snowflake算法是一个用于生成64位全局唯一ID的系统。这个算法解决了在分布式系统中如何高效地生成唯一标识符的问题，特别是在需要考虑时间顺序的场合。Snowflake生成的ID是一个64位的整数，这个整数被分成了几个不同的部分，每部分有其特定的含义。
 
 #### Snowflake ID的结构
-![Snowflake ID 结构](images/snowflake.png)
+![Snowflake ID 结构](images/Snowflake.png)
 1. **1位符号位**：最高位是符号位，始终设置为0，确保生成的ID是正数。
 2. **41位时间戳**：用来记录时间戳，其值是生成时间与特定起始时间（称为纪元）之间的差值（通常是毫秒级），41位时间戳可以使用69年。
 3. **10位工作机器ID**：可以进一步细分为：
@@ -136,7 +136,7 @@ Leaf-snowflake模式是基于Twitter的Snowflake算法实现的，其主要用�
 3. **序列号**：在同一毫秒内，通过递增序列号来保证ID的唯一性。
 4. **时钟回拨处理**：Leaf增加了对系统时钟回拨的处理策略，确保ID的唯一性和连续性不会因为时钟回拨而受影响。详见[Leaf官方技术文档](https://tech.meituan.com/2017/04/21/mt-leaf.html)
 
-### 2.3 总结
+### 4.3 总结
 美团Leaf通过提供segment和snowflake两种模式，能够满足不同场景下对于分布式ID生成的需求。Leaf-segment模式适合对ID趋势递增有要求的场景，而Leaf-snowflake模式则适合对ID生成性能要求更高的场景。通过这两种模式，美团Leaf为分布式系统中的ID生成提供了一种高效、可靠的解决方案。
 
 详细技术方案，详见[Leaf官方技术文档](https://tech.meituan.com/2017/04/21/mt-leaf.html)
