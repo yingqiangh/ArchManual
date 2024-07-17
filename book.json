@@ -3,7 +3,6 @@
   "description": "分布式系统架构手册",
   "plugins": [
     "sitemap",
-    "gtalk",
     "sitemap-general",
     "github",
     "hide-element",
@@ -26,13 +25,6 @@
     "seo"
   ],
   "pluginsConfig": {
-      "gtalk": {
-        "clientID": "629ef72a99db4bf8052f",
-        "clientSecret": "7f1ec5fa0d83b1fb92b130b1818266e65df0f7c0",
-        "repo": "ArchManual",
-        "owner": "yingqiangh",
-        "admin": ["yingqiangh"]
-      },
       "lightbox": {
         "includeJQuery": false,
         "sameUuid": true,
@@ -73,7 +65,7 @@
           "url": "/images/logo.png",
           "style": "background: none; max-height: 30px; min-height: 30px;"
       },
-      "favicon": "/images/fav.ico",
+      "favicon": "images/favicon.ico",
       "sharing": {
           "all": [
               "weibo",
@@ -90,7 +82,8 @@
           ]
       },
       "seo": {
-        "description": "分布式技术手册,包含：后端技术、前端技术、运维、监控、安全、大数据、人工智能",
+        "descriptionPrefix":"ArchManual",
+        "description":"分布式技术手册,包含：后端技术、前端技术、运维、监控、安全、大数据、人工智能",
         "noindex": false,
         "title": "分布式技术手册",
         "keywords": "分布式,技术机构,系统架构,Java技术栈,微服务"
