@@ -1,3 +1,8 @@
+---
+title: "Redis 高效使用：Key设计、优化与热点Key处理"
+description: "探讨Redis中Key的设计、优化与监测方法，确保数据库高效稳定运行。介绍合理命名、压缩序列化、批量操作等技巧，以及热点Key的检测与处理策略。"
+keywords: "Redis Key设计, Redis性能优化, Redis热点Key, Redis命名规范, Redis压缩, Redis序列化, Redis批量操作, Redis热点Key检测, Redis热点Key处理, Redis缓存优化"
+---
 # Redis
 在使用Redis的过程中，对Key的设计、优化和监测是确保Redis数据库高效、稳定运行的关键。
 

@@ -1,3 +1,8 @@
+---
+title: "注册发现：服务注册与发现的关键技术及工具"
+description: "深入探讨注册发现的应用场景、功能性要求、实现方案及常见工具，如Eureka、Consul、Zookeeper、Nacos和Etcd。"
+keywords: "注册发现, 服务注册, 服务发现, 微服务, Eureka, Consul, Zookeeper, Nacos, Etcd"
+---
 # 注册发现
 
 注册发现（Service Registration and Discovery）是微服务架构中一个非常重要的组成部分，主要用于管理微服务间的地址和状态信息，以便服务间能够相互发现和调用。

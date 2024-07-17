@@ -1,3 +1,8 @@
+---
+title: "服务降级详解 - 提高系统稳定性的关键策略"
+description: "深入解析服务降级的原理、场景和实现方案，包括功能降级、请求降级、数据降级和用户降级等策略。通过Hystrix、Sentinel、Resilience4j和Spring Cloud Circuit Breaker等工具，确保系统在高负载和部分故障情况下的可用性和稳定性。"
+keywords: "服务降级, 系统稳定性, 高流量处理, 功能降级, 请求降级, 数据降级, 用户降级, Hystrix, Sentinel, Resilience4j, Spring Cloud Circuit Breaker"
+---
 # 服务降级
 
 服务降级是一种常见的应对系统过载或部分系统故障的策略，旨在保证系统的整体可用性和稳定性。

@@ -1,3 +1,8 @@
+---
+title: "Redis 高可用性实现与案例分析"
+description: "深入探讨Redis高可用性实现的多种方案，包括Redis Sentinel、Redis Cluster、Kubernetes和Redis Enterprise等。详细讲解Redis Sentinel的原理、部署架构及数据丢失场景分析。"
+keywords: "Redis 高可用, Redis Sentinel, Redis Cluster, Kubernetes Redis, Redis Operator, Redis Enterprise, 分布式系统, Redis 故障转移, Redis 数据丢失, Redis 异步复制, Redis 脑裂"
+---
 # Redis 高可用
 Redis 高可用性（High Availability）是指在 Redis 系统中实现持续的可用性，即使在发生硬件故障或其他意外情况下，系统仍能保持运行。
 

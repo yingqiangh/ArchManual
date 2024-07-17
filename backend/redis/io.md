@@ -1,3 +1,8 @@
+---
+title: "Redis IO模型与高性能实现"
+description: "探讨Redis的IO模型，通过Reactor模式和多路复用机制实现高性能并发处理。分析Redis的事件驱动框架、单线程模型的优势及详细实现原理。"
+keywords: "Redis IO模型, Reactor模式, 多路复用, Redis性能优化, Redis单线程, Redis事件驱动, Redis并发处理, Redis高性能"
+---
 # Redis IO模型
 Redis IO模型 使用的是基于 Reactor 模式的 I/O 多路复用模型。这个模型通过单线程事件循环来处理所有的客户端请求和响应。
 

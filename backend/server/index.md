@@ -1,3 +1,8 @@
+---
+title: "Java应用服务器详解 - 探索Java EE规范与常见应用服务器"
+description: "深入解析Java应用服务器及其支持的J2EE规范，涵盖Servlet、JSP、EJB、JPA等关键技术。详细介绍开源应用服务器如Tomcat、Jetty的核心组件、架构原理及优缺点，并概述商业应用服务器如IBM WebSphere、Oracle WebLogic和Red Hat JBoss EAP的特性。"
+keywords: "Java应用服务器, J2EE规范, Servlet, JSP, EJB, JPA, Tomcat, Jetty, IBM WebSphere, Oracle WebLogic, Red Hat JBoss EAP, 分布式系统, 微服务架构, 开源应用服务器, 商业应用服务器, Java EE, 事务管理, 异步通信"
+---
 # 应用服务器
 Java 应用服务器是专门用来运行基于Java技术的Web应用程序的服务器。
 

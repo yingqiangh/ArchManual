@@ -1,3 +1,8 @@
+---
+title: "Redis 过期策略详解及其实现"
+description: "Redis 的过期策略确保内存的有效使用和数据的及时清理，主要包括定期删除、惰性删除和内存淘汰策略。本文详细介绍了这些过期策略的工作原理、实现步骤和相互配合的机制。"
+keywords: "Redis 过期策略, Redis 定期删除, Redis 惰性删除, Redis 内存淘汰策略, Redis 内存管理, Redis 数据清理, Redis 内存优化, Redis 性能调优, LRU 算法, Redis TTL"
+---
 # Redis 过期策略
 Redis 的过期策略主要是指管理和删除那些设定了过期时间的键，以确保内存的有效使用和数据的及时清理。
 具体来说，Redis 有三种主要的过期策略：定期删除（Scheduled Deletion）、惰性删除（Lazy Deletion）和内存淘汰策略（Eviction Policies）。

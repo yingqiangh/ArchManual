@@ -1,3 +1,8 @@
+---
+title: "Redis 持久化机制：快照、追加文件及混合持久化"
+description: "详细探讨Redis的持久化机制，包括快照（Snapshotting）、追加文件（Append-Only File，AOF）及混合持久化，分析其工作原理、配置方法及优缺点。"
+keywords: "Redis 持久化, Redis 快照, Redis AOF, Redis 混合持久化, 数据安全性, 系统恢复, 数据分析, 操作灵活性, 备份和数据迁移"
+---
 # Redis
 
 Redis 提供了两种主要的持久化机制：快照（Snapshotting）和追加文件（Append-Only File，AOF），以及这两者相结合的混合持久化。

@@ -1,3 +1,8 @@
+---
+title: "延迟任务详解 - 实现精准可靠的定时任务处理"
+description: "深入解析延迟任务的应用场景和实现方案，包括基于消息队列（RabbitMQ、RocketMQ）、Redis（zset、Redisson RDelayedQueue）、定时轮询和内存队列（JDK DelayQueue）等技术，帮助实现订单超时自动取消等精准可靠的延迟任务。"
+keywords: "延迟任务, 定时任务, RabbitMQ 延迟队列, RocketMQ 定时消息, Redis zset, Redisson RDelayedQueue, 订单超时自动取消, 消息队列, 时间轮算法, 分布式任务调度, 定时轮询, JDK DelayQueue, 任务可靠性, 精准时间控制"
+---
 # 延迟任务
 ## 场景
 - **订单超时自动取消**：延迟任务典型的使用场景是订单超时自动取消。

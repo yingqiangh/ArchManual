@@ -1,3 +1,8 @@
+---
+title: "Redis 数据类型详解与应用场景"
+description: "Redis 是一种开源的内存数据结构存储，用作数据库、缓存和消息代理。本文详细介绍了 Redis 支持的多种数据结构，包括字符串、哈希、列表、集合、有序集合、位图、HyperLogLog、地理空间和流，及其常见的应用场景和实现示例代码。"
+keywords: "Redis 数据类型, Redis 字符串, Redis 哈希, Redis 列表, Redis 集合, Redis 有序集合, Redis 位图, Redis HyperLogLog, Redis 地理空间, Redis 流, 数据结构, 高效存储, 数据缓存, 消息队列"
+---
 # Redis - 数据类型
 Redis是一种开源的内存数据结构存储，用作数据库、缓存和消息代理。
 它支持多种数据结构，如字符串、哈希、列表、集合、有序集合等。

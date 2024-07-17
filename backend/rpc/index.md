@@ -1,3 +1,8 @@
+---
+title: "服务调用详解 - 探索分布式系统和微服务架构的核心技术"
+description: "深入解析服务调用的概念、优缺点及其实现方式。了解远程过程调用（gRPC、Dubbo、JSON-RPC、Thrift）和Web服务（RESTful、SOAP）、消息队列（RabbitMQ）及GraphQL的原理、工作流程和适用场景。掌握分布式系统和微服务架构中的最佳实践与技术选型。"
+keywords: "服务调用, 分布式系统, 微服务架构, gRPC, Dubbo, JSON-RPC, Thrift, Web服务, RESTful, SOAP, 消息队列, RabbitMQ, GraphQL, 服务提供者, 服务消费者, 异步处理, 高可用性, 负载均衡, 认证和授权, 安全风险, 监控和调试"
+---
 # 服务调用
 
 **服务调用**是指一个软件系统通过某种通信协议请求另一个软件系统提供特定服务的过程。

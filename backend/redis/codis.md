@@ -1,3 +1,8 @@
+---
+title: "Codis 分布式集群架构详解与实现"
+description: "深入探讨 Codis 作为 Redis 分布式架构代理系统的关键组件与工作原理，包括 Codis FE、Codis Proxy、Codis Group、Codis Server、Codis Dashboard、Jodis、Redis Sentinel 及其在实现数据分片和高可用性中的作用。本文详细介绍了 Codis 各组件的配置和使用方法，帮助用户构建高效稳定的 Redis 分布式集群。"
+keywords: "Codis, Redis 分布式架构, Codis Proxy, Codis Dashboard, Codis Group, Codis Server, Jodis, Redis Sentinel, 高可用性, 数据分片, 分布式系统, 负载均衡, 故障转移, 集群管理, ZooKeeper, Etcd, Fs"
+---
 # Codis 分布式集群
 Codis 是一个用于实现 Redis 分布式架构的代理系统，通过引入代理层来分发客户端的请求，从而实现数据分片和高可用性。
 

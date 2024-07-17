@@ -1,3 +1,8 @@
+---
+title: "Redis 主从复制：工作原理、优势及优化策略"
+description: "深入探讨Redis主从复制的工作原理、优势及其配置方法，详解主从架构下Key的过期处理及主节点不开启磁盘持久化可能带来的问题与解决方案。"
+keywords: "Redis 主从复制, Redis 高可用, Redis 复制配置, Redis 数据一致性, Redis 故障转移, Redis 过期处理, Redis 磁盘持久化, Redis Sentinel"
+---
 # Redis 主从复制
 Redis 的主从复制（Replication）是其高可用性和扩展性的重要特性之一。它允许你在多个Redis服务器之间同步数据，从而提高数据的可用性和读取性能。
 

@@ -1,3 +1,8 @@
+---
+title: "Redis 双写一致性详解与 Cache-Aside Pattern 实现"
+description: "本文介绍了在高性能、高并发系统中，如何通过 Redis 双写一致性和 Cache-Aside Pattern 保证缓存与后端数据库的数据一致性。深入分析了 Cache-Aside Pattern 的工作流程、实现步骤、优缺点及其适用场景，并提供了解决缓存和数据库数据不一致的策略，如延迟双删策略、重试机制、异步任务、订阅binlog日志等方法。"
+keywords: "Redis 双写一致性, Cache-Aside Pattern, 懒加载, 数据一致性, 高并发系统, 缓存失效, 延迟双删策略, 重试机制, 异步任务, 订阅 binlog, 消息队列, 数据库同步"
+---
 # Redis 双写一致性
 
 Redis 双写一致性是指在使用Redis作为缓存或数据存储时，保证在写入数据到Redis和后端数据库时，两者的数据保持一致的机制。
