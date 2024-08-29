@@ -30,7 +30,7 @@ ArchManual
 
 ## 整体概览 
 - 概览图：  
-![整体概览](overview/images/ArchManual.png)  
+![整体概览](https://archmanual.com/overview/images/ArchManual.png)  
 - 地址：  
 [思维导图](https://www.processon.com/view/link/65b74ca5ec61176de3760fc3)
 
